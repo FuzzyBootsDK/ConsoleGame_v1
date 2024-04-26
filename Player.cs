@@ -7,9 +7,9 @@ public class Player
     public int PlayerHealth { get; private set; }
     public string PlayerClass { get; private set; }
     public string PlayerRace { get; private set; }
-    public int attackDamage { get; private set; }
-    public int spellDamage { get; private set; }
-    public int damageModifier { get; private set; }
+    public int AttackDamage { get; private set; }
+    public int SpellDamage { get; private set; }
+    public int DamageModifier { get; private set; }
     
     public Player(string playerName, string playerClass, string playerRace, int playerLevel, int playerHealth)
     {
@@ -23,49 +23,49 @@ public class Player
             case "Warrior":
                 if (playerRace == "Dwarf")
                 {
-                    attackDamage = 15;
-                    spellDamage = 1;
-                    damageModifier = 1;
+                    AttackDamage = 15;
+                    SpellDamage = 1;
+                    DamageModifier = 1;
                 }
                 else
                 {
-                    attackDamage = 10;
-                    spellDamage = 1;
-                    damageModifier = 1;
+                    AttackDamage = 10;
+                    SpellDamage = 1;
+                    DamageModifier = 1;
                 }
                 break;
             case "Warlock":
                 if (playerRace == "Elf")
                 {
-                    attackDamage = 1;
-                    spellDamage = 15;
-                    damageModifier = 1;
+                    AttackDamage = 1;
+                    SpellDamage = 15;
+                    DamageModifier = 1;
                 }
                 else
                 {
-                    attackDamage = 1;
-                    spellDamage = 10;
-                    damageModifier = 1;
+                    AttackDamage = 1;
+                    SpellDamage = 10;
+                    DamageModifier = 1;
                 }
                 break;
             case "Rogue":
                 if (playerRace == "Human")
                 {
-                    attackDamage = 7;
-                    spellDamage = 7;
-                    damageModifier = 1;
+                    AttackDamage = 7;
+                    SpellDamage = 7;
+                    DamageModifier = 1;
                 }
                 else
                 {
-                    attackDamage = 5;
-                    spellDamage = 5;
-                    damageModifier = 1;
+                    AttackDamage = 5;
+                    SpellDamage = 5;
+                    DamageModifier = 1;
                 }
                 break;
             default:
-                attackDamage = 1;
-                spellDamage = 1;
-                damageModifier = 1;
+                AttackDamage = 1;
+                SpellDamage = 1;
+                DamageModifier = 1;
                 break;
         }
     }

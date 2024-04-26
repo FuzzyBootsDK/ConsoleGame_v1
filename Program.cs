@@ -1,7 +1,7 @@
 ﻿using ConsoleGame_v1;
 
-StartUp startUp = new StartUp();
+StartUp startUp = new();
 startUp.Start();
-Player player = new Player(startUp.PlayerName, startUp.PlayerClass, startUp.PlayerRace, startUp.PlayerLevel, startUp.PlayerHealth);
+Player player = new (startUp.PlayerName, startUp.PlayerClass, startUp.PlayerRace, startUp.PlayerLevel, startUp.PlayerHealth);
 player.DisplayPlayerInfo();
 
